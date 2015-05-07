@@ -1,0 +1,37 @@
+{
+    "name": "Route53 DDNS Updater",
+    "description": "A tiny app to update your zones",
+    "repository": "https://github.com/peterkeen/route53_ddns",
+    "keywords": ["ddns", "dns", "route53", "aws"],
+    "env": {
+        "AWS_ACCESS_KEY_ID": {
+            "description": "Your AWS access key ID",
+            "required": true
+        },
+        "AWS_SECRET_ACCESS_KEY": {
+            "description": "Your AWS secret access key",
+            "required": true
+        },
+        "AWS_REGION": {
+            "description": "Your AWS region",
+            "value": "us-east-1",
+            "required": true
+        },
+        "ZONE_ID": {
+            "description": "Route53 zone id (note: not the zone name!)",
+            "required": true
+        }
+        "RECORD_NAME": {
+            "description": "Record name to update (eg: somehost.example.com)",
+            "required": true
+        }
+        "USERNAME": {
+            "description": "Username for basic auth",
+            "required": true
+        },
+        "PASSWORD": {
+            "description": "Password for basic auth",
+            "required": true
+        }
+    }
+}
