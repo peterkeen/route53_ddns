@@ -6,5 +6,5 @@ end
 
 run lambda { |env|
   SubspaceUpdater.new(Rack::Request.new(env)).update
-  return [200, {}, ['ok']]
+  return [200, {}, ['']]
 }
