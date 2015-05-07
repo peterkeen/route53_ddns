@@ -27,13 +27,11 @@
         },
         "USERNAME": {
             "description": "Username for basic auth",
-            "required": true,
-            "generator": "secret"
+            "required": true
         },
         "PASSWORD": {
             "description": "Password for basic auth",
-            "required": true,
-            "generator": "secret"
+            "required": true
         }
     }
 }
