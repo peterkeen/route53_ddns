@@ -20,11 +20,11 @@
         "ZONE_ID": {
             "description": "Route53 zone id (note: not the zone name!)",
             "required": true
-        }
+        },
         "RECORD_NAME": {
             "description": "Record name to update (eg: somehost.example.com)",
             "required": true
-        }
+        },
         "USERNAME": {
             "description": "Username for basic auth",
             "required": true
