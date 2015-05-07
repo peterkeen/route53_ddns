@@ -10,4 +10,8 @@ This is a tiny app you can run on Heroku to update a single DNS record with a si
 
 2. Fill in the params.
 
-3. cron your curl call.
+3. cron your curl
+
+```
+curl -u username:password -s https://your-heroku-app.herokuapp.com
+```
