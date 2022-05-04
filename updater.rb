@@ -1,4 +1,5 @@
 require 'aws-sdk'
+require 'pp'
 
 class SubspaceUpdater
   def initialize(request)
@@ -28,8 +29,9 @@ class SubspaceUpdater
     }
     begin
       resp = conn.change_resource_record_sets(opts)
+      pp resp
     rescue Aws::Errors::ServiceError => e
-      p e.message
+      pp e.message
     end
   end
 end
