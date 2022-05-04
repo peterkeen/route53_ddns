@@ -13,7 +13,7 @@ GEM
     jmespath (1.0.2)
       multi_json (~> 1.0)
     multi_json (1.11.0)
-    rack (2.0.3)
+    rack (2.1.4)
     rake (12.3.3)
 
 PLATFORMS
