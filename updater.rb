@@ -8,6 +8,7 @@ class SubspaceUpdater
 
   def update
     conn = Aws::Route53::Client.new
+    raise @request.ip
 
     opts = {
       hosted_zone_id: ENV['ZONE_ID'],
