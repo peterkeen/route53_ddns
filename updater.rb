@@ -8,7 +8,6 @@ class SubspaceUpdater
 
   def update
     conn = Aws::Route53::Client.new
-    raise @request.ip
 
     opts = {
       hosted_zone_id: ENV['ZONE_ID'],
@@ -30,9 +29,9 @@ class SubspaceUpdater
     }
     begin
       resp = conn.change_resource_record_sets(opts)
-      pp resp
+      STDERR.puts resp.inspect
     rescue Aws::Errors::ServiceError => e
-      pp e.message
+      STDERR.puts e
     end
   end
 end
